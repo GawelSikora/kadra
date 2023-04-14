@@ -18,3 +18,6 @@ class SztabModel {
     required this.imageURL,
   });
 }
+
+
+enum Status {initial , loading, data , error }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:kadra/Pages/data_source.dart';
 import 'package:kadra/usables.dart';
 
@@ -19,5 +20,23 @@ class Repository {
         .toList();
 
     return listOfSztab;
+  }
+}
+
+class RepositoryPlayers {
+  RepositoryPlayers(this._dataSourcePlayers);
+
+  DataSourcePlayers _dataSourcePlayers;
+ 
+
+
+   Future getPlayers() async {
+    final players = await  _dataSourcePlayers.getPlayersSnapshot();
+
+
+
+
+  
+    return players;
   }
 }

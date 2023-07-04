@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "483504618828",
+    "project_id": "kadranarodowaapka",
+    "storage_bucket": "kadranarodowaapka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483504618828:android:18356adea303076174a3e9",
+        "android_client_info": {
+          "package_name": "com.roosterau.kadra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483504618828-9f7ccj8v6hd0haimpbj96lnejm4up2k9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvMzp5caecxJf1otUEaQ5TGzfDt8v76ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483504618828-9f7ccj8v6hd0haimpbj96lnejm4up2k9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

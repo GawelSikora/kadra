@@ -1,4 +1,4 @@
-package com.example.kadra
+package com.roosterau.kadra
 
 import io.flutter.embedding.android.FlutterActivity
 

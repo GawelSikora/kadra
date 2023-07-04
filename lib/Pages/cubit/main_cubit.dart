@@ -5,7 +5,7 @@ import 'package:kadra/usables.dart';
 part 'main_state.dart';
 
 class MainCubit extends Cubit<MainState> {
-  MainCubit(this._repository) : super(MainState());
+  MainCubit(this._repository, this._repositoryPlayers) : super(MainState());
 
   final Repository _repository;
 
@@ -24,5 +24,21 @@ class MainCubit extends Cubit<MainState> {
         sztab: repository,
       ));
     }
+  }
+
+  final RepositoryPlayers _repositoryPlayers;
+
+  Future getPlayers() async {
+    emit(MainState(status: Status.loading));
+
+    final players = await _repositoryPlayers.getPlayers();
+
+    
+
+
+
+
+
+
   }
 }

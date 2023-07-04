@@ -16,35 +16,40 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Kadra'),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            InkWell(
-              onTap: () {
-                Repository(DataSource()).sztabModel();
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const Sztab()),
-                );
-              },
-              child: Flexible(
-                child: Image.network(
-                  'https://cdn.galleries.smcloud.net/t/galleries/gf-XdwU-1cUJ-y3Qu_fernando-santos-zdecydowal-znamy-sztab-nowego-selekcjonera-664x442.jpg',
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            children: [
+              InkWell(
+                onTap: () {
+                  Repository(DataSource()).sztabModel();
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Sztab()),
+                  );
+                },
+                child: Flexible(
+                  child: Image.network(
+                    'https://cdn.galleries.smcloud.net/t/galleries/gf-XdwU-1cUJ-y3Qu_fernando-santos-zdecydowal-znamy-sztab-nowego-selekcjonera-664x442.jpg',
+                    height: 300,
+                  ),
                 ),
               ),
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const Kadra()),
-                );
-              },
-              child: Flexible(
-                child: Image.network(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Poland_national_football_team_Euro_2012.jpg/350px-Poland_national_football_team_Euro_2012.jpg',
+              InkWell(
+                onTap: () {
+                  
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Kadra()),
+                  );
+                },
+                child: Flexible(
+                  child: Image.network(
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Poland_national_football_team_Euro_2012.jpg/350px-Poland_national_football_team_Euro_2012.jpg',
+                    height: 300,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ));
   }
 }

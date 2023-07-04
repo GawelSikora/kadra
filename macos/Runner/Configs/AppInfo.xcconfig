@@ -8,7 +8,7 @@
 PRODUCT_NAME = kadra
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.kadra
+PRODUCT_BUNDLE_IDENTIFIER = com.roosterau.kadra
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2023 com.roosterau. All rights reserved.

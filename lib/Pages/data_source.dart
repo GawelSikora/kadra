@@ -1,4 +1,9 @@
+import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:kadra/usables.dart';
 
 class DataSource {
   Future<List?> getSztab() async {
@@ -16,5 +21,20 @@ class DataSource {
     final List dataList = responseData["czlonkowie"] as List;
 
     return dataList;
+  }
+}
+
+class DataSourcePlayers {
+  getPlayersSnapshot() {
+   
+   
+
+
+    final playersQuerry =
+        FirebaseFirestore.instance.collection('players').snapshots();
+
+    print(playersQuerry);
+
+    return playersQuerry;
   }
 }

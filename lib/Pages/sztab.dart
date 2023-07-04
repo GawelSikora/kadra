@@ -49,11 +49,19 @@ class MemberContainer extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Container(
         color: Colors.orange,
-        child: Column(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.network(model.imageURL),
-            Text(model.pozycja),
-            Text(model.name),
+            Image.network(
+              model.imageURL,
+              height: 100,
+            ),
+            Column(
+              children: [
+                Text(model.pozycja),
+                Text(model.name),
+              ],
+            ),
           ],
         ),
       ),
